@@ -1,0 +1,41 @@
+.examples {
+  padding-bottom: 94px;
+}
+.examples__list {
+  display: flex;
+}
+.examples__item {
+  margin-left: 30px;
+}
+.examples__item--first {
+  margin-left: 0;
+}
+
+.examples__thumb {
+  position: relative;
+}
+.examples__photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.examples__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 370px;
+  height: 70px;
+  margin: 0;
+  background-color: var(--examples-thumb-background);
+  color: var(--main-background-color);
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

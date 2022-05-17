@@ -1,0 +1,15 @@
+@mixin mediaColor(
+  $color,
+  $bckg-color,
+  $hoverCol: var(--main-background-color),
+  $hoverBckg: var(--accent-color)
+) {
+  color: $color;
+  background-color: $bckg-color;
+
+  &:hover,
+  &:focus {
+    color: $hoverCol;
+    background-color: $hoverBckg;
+  }
+}

@@ -1,0 +1,46 @@
+.portfolio-products {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.products-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.products-list__item {
+  margin-left: 9px;
+
+  &--first {
+    margin-left: 0;
+  }
+}
+.product-list__button {
+  padding: 6px 22px;
+
+  color: var(--title-text-color);
+  background-color: var(--product-button-color);
+  border: initial;
+  border-radius: 4px;
+
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+
+  transition: background-color 250ms var(--main-animation), color 250ms var(--main-animation),
+    box-shadow 250ms var(--main-animation);
+
+  &--current {
+    color: var(--white-title-color);
+    background-color: var(--accent-color);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--white-title-color);
+    background-color: var(--accent-color);
+    box-shadow: var(--hover-filter-shadow);
+  }
+}

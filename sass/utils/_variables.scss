@@ -1,0 +1,35 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --white-title-color: #ffffff;
+  --logo-color: #000000;
+  --accent-color: #2196f3;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --product-button-color: #f5f4fa;
+  --hero-footer-background: #2f303a;
+  --main-background-color: #ffffff;
+  --header-border-color: #ececec;
+  --workers-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --main-button-hover: #188ce8;
+  --products-cards-border-color: #eeeeee;
+  --background-hero-gradient: rgba(47, 48, 58, 0.4);
+  --social-media-icons: #afb1b8;
+  --footer-mail-border: rgba(255, 255, 255, 0.3);
+  --social-media-footer-background: rgba(100%, 100%, 100%, 10%);
+  --hover-filter-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  --hover-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  --comment-area-text: rgba(117, 117, 117, 0.5);
+  --examples-thumb-background: rgba(47, 48, 58, 0.8);
+  --input-border-color: rgba(33, 33, 33, 0.2);
+  --main-animation: cubic-bezier(0.4, 0, 0.2, 1);
+}
+body {
+  color: var(--primary-text-color);
+  background-color: var(--main-background-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
