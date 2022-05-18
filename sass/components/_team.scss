@@ -1,44 +1,85 @@
 .team {
   background-color: var(--product-button-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.workers-name {
-  color: var(--title-text-color);
-  margin-top: 0;
-  margin-bottom: 10;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team__list {
-  display: flex;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+  // display: flex;
 }
 .team__item {
   background-color: var(--white-title-color);
   box-shadow: var(--workers-card-shadow);
   border-radius: 0px 0px 4px 4px;
-
-  margin-left: 30px;
-
-  |&-first {
-  margin-left: 0;
+  @media screen and (max-width: 767px) {
+    margin-top: 30px;
+    &-first {
+      margin-top: 0;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    @include item(null, null, 30px, 30px, null, 2, 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin-left: 30px;
+    &--first {
+      margin-left: 0;
+    }
+  }
 }
-}
-
 
 .team__photo {
   display: block;
 }
 .team__text {
   padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
+
+  @media screen and (min-width: 480px) {
+    padding-left: 122px;
+    padding-right: 122px;
+    padding-bottom: 24px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
+
 .team__name {
+  color: var(--title-text-color);
+  margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.18;
   text-align: center;
+  @media screen and (min-width: 480px) {
+  }
+  // line-height: 1.8;
 }
 .team__position {
   margin-top: 0;
@@ -52,8 +93,11 @@
   justify-content: center;
   align-items: center;
 
-  width: 206px;
   height: 44px;
+
+  @media screen and (min-width: 480px) {
+    width: 206px;
+  }
 }
 .social-media__item {
   display: flex;
@@ -64,6 +108,10 @@
   height: 44px;
 
   margin-left: 10px;
+
+  &--first {
+    margin-left: 0;
+  }
 }
 .media-link {
   display: flex;

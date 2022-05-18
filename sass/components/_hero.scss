@@ -5,8 +5,6 @@
       var(--background-hero-gradient)
     ),
     url('../images/hero-background.jpg');
-  height: 600px;
-  max-width: 1600px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,21 +12,50 @@
 
   margin: 0 auto;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    height: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    height: 400px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero__container {
-  width: 696px;
+  padding: 0;
+  @media screen and (min-width: 480px) {
+    width: 360px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+  }
 }
 .hero__title {
   color: var(--white-title-color);
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  @media screen and (min-width: 480px) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .hero-button {
   @extend %button;

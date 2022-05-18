@@ -13,3 +13,12 @@
     background-color: $hoverBckg;
   }
 }
+
+@mixin item($mr, $mb, $ml, $mt, $m, $q, $gap) {
+  margin-right: $mr;
+  margin-bottom: $mb;
+  margin-left: $ml;
+  margin-top: $mt;
+  margin: $m;
+  flex-basis: calc(100% / #{$q} - #{$gap});
+}
