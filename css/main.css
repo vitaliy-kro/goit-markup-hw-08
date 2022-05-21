@@ -180,6 +180,80 @@ body {
   color: var(--white-title-color);
 }
 
+.page-header {
+  background-color: var(--main-background-color);
+  border-bottom: 1px solid var(--header-border-color);
+  position: relative;
+}
+
+.page-header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button__icon-cross {
+  display: none;
+}
+.menu-button.is-open .menu-button__icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .menu-button__icon-menu {
+  display: none;
+}
+
+.page-header__content {
+  display: none;
+  position: fixed;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-background-color);
+}
+.page-header__content.is-open {
+  display: block;
+}
+
+.page-header__navigation {
+  padding-left: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.site-nav__link {
+  transition: color 250ms var(--main-animation);
+}
+.site-nav__link:hover, .site-nav__link:focus {
+  color: var(--accent-color);
+}
+.auth-list__link {
+  align-items: center;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms var(--main-animation);
+}
+.auth-list__link:hover, .auth-list__link:focus {
+  color: var(--accent-color);
+}
+
+.auth-list__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .hero {
   background-image: linear-gradient(to right, var(--background-hero-gradient), var(--background-hero-gradient)), url("../images/hero-background.jpg");
   background-size: cover;
