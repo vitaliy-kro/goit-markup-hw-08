@@ -251,6 +251,7 @@ body {
 }
 
 .page-header__content {
+  z-index: 100;
   opacity: 0;
   pointer-events: none;
   position: absolute;
