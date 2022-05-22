@@ -1,18 +1,29 @@
 .portfolio-products {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .products-list {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  margin-right: -8px;
+  margin-top: -15px;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+
+    margin-bottom: 50px;
+  }
 }
 .products-list__item {
-  margin-left: 9px;
-
-  &--first {
-    margin-left: 0;
-  }
+  margin-right: 8px;
+  margin-top: 15px;
 }
 .product-list__button {
   padding: 6px 22px;

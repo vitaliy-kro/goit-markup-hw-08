@@ -21,40 +21,69 @@
     <!-- Шапка -->
     <header class="page-header">
       <div class="page-header__container container">
-        <a lang="en" class="logo" href="./index.html">Web<span class="logo__text">Studio</span></a>
-        <nav class="page-header__navigation">
-          <ul class="site-nav list">
-            <li class="site-nav__item site-nav__item--first">
-              <a href="./index.html" class="site-nav__link">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link site-nav__link--current"
-                >Портфолио</a
+        <div class="page-header__menu" flex-end>
+          <a logo lang="en" class="logo" href="./index.html"
+            >Web<span class="logo__text">Studio</span></a
+          >
+          <button type="button" class="menu-button" data-menu-button aria-expanded="false">
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+              aria-controls="page-header__content"
+            >
+              <use
+                class="menu-button__icon-cross"
+                href="./images/sprite.svg#icon-close-mobile-menu"
+              ></use>
+              <use class="menu-button__icon-menu" href="./images/sprite.svg#icon-mobile-menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="page-header__content" id="page-header__content" data-menu>
+          <nav class="page-header__navigation">
+            <ul class="site-nav list">
+              <li class="site-nav__item site-nav__item--first">
+                <a href="./index.html" class="site-nav__link">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link site-nav__link--current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="site-nav__item site-nav__item--last">
+                <a href="" class="site-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="auth-list list">
+            <li class="auth-list__item auth-list__item--last">
+              <a href="tel:+380961111111" class="auth-list__link auth-list__link--middle-tel">
+                <svg class="auth-list__icon" width="10" height="16">
+                  <use href="./images/sprite.svg#icon-tel"></use>
+                </svg>
+                +38 096 111 11 11</a
               >
             </li>
-            <li class="site-nav__item site-nav__item--last">
-              <a href="" class="site-nav__link">Контакты</a>
+            <li class="auth-list__item auth-list__item--first">
+              <a
+                href="mailto:info@devstudio.com"
+                class="auth-list__link auth-list__link--big-email"
+              >
+                <svg class="auth-list__icon" width="16" height="12">
+                  <use href="./images/sprite.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="auth-list auth-list--head list">
-          <li class="auth-list__item auth-list__item--first">
-            <a href="mailto:info@devstudio.com" class="auth-list__link">
-              <svg class="auth-list__icon" width="16" height="12">
-                <use href="./images/sprite.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="auth-list__item auth-list__item--last">
-            <a href="tel:+380961111111" class="auth-list__link">
-              <svg class="auth-list__icon" width="10" height="16">
-                <use href="./images/sprite.svg#icon-tel"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="page-header__social-media list">
+            <li class="page-header__item"><a class="social-media-link" href="#">Instagram</a></li>
+            <li class="page-header__item"><a class="social-media-link" href="#">Twitter</a></li>
+            <li class="page-header__item"><a class="social-media-link" href="#">Facebook</a></li>
+            <li class="page-header__item"><a class="social-media-link" href="#">Linkedin</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -73,10 +102,10 @@
             <li class="products-list__item">
               <button type="button" class="product-list__button">Приложения</button>
             </li>
-            <li class="products-list__item">
+            <li class="products-list__item products-list__item--first-in-line">
               <button type="button" class="product-list__button">Дизайн</button>
             </li>
-            <li class="products-list__item">
+            <li class="products-list__item products-list__item--last">
               <button type="button" class="product-list__button">Маркетинг</button>
             </li>
           </ul>
@@ -277,7 +306,7 @@
                 </div>
               </a>
             </li>
-            <li class="product-cards__item">
+            <li class="product-cards__item product-cards__item--last">
               <a href="" class="card-link">
                 <div class="product-cards__thumb">
                   <img
@@ -377,5 +406,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

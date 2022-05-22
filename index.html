@@ -21,8 +21,8 @@
     <!-- Шапка -->
     <header class="page-header">
       <div class="page-header__container container">
-        <div class="page-header__menu">
-          <a lang="en" class="logo" href="./index.html"
+        <div class="page-header__menu" flex-end>
+          <a logo lang="en" class="logo" href="./index.html"
             >Web<span class="logo__text">Studio</span></a
           >
           <button type="button" class="menu-button" data-menu-button aria-expanded="false">
@@ -55,22 +55,31 @@
             </ul>
           </nav>
           <ul class="auth-list list">
-            <li class="auth-list__item auth-list__item--first">
-              <a href="mailto:info@devstudio.com" class="auth-list__link">
-                <svg class="auth-list__icon" width="16" height="12">
-                  <use href="./images/sprite.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
             <li class="auth-list__item auth-list__item--last">
-              <a href="tel:+380961111111" class="auth-list__link">
+              <a href="tel:+380961111111" class="auth-list__link auth-list__link--middle-tel">
                 <svg class="auth-list__icon" width="10" height="16">
                   <use href="./images/sprite.svg#icon-tel"></use>
                 </svg>
                 +38 096 111 11 11</a
               >
             </li>
+            <li class="auth-list__item auth-list__item--first">
+              <a
+                href="mailto:info@devstudio.com"
+                class="auth-list__link auth-list__link--big-email"
+              >
+                <svg class="auth-list__icon" width="16" height="12">
+                  <use href="./images/sprite.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="page-header__social-media list">
+            <li class="page-header__item"><a class="social-media-link" href="#">Instagram</a></li>
+            <li class="page-header__item"><a class="social-media-link" href="#">Twitter</a></li>
+            <li class="page-header__item"><a class="social-media-link" href="#">Facebook</a></li>
+            <li class="page-header__item"><a class="social-media-link" href="#">Linkedin</a></li>
           </ul>
         </div>
       </div>
@@ -468,7 +477,7 @@
       </div>
     </footer>
     <!-- Модальне вікно -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button type="button" class="modal-window__close-button" data-modal-close>
           <svg class="modal-window__close-icon">
@@ -552,7 +561,8 @@
           <button type="submit" class="button button--submit">Отправить</button>
         </form>
       </div>
-    </div> -->
+    </div>
+    -->
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
