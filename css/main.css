@@ -485,7 +485,6 @@ body {
 }
 
 .hero {
-  background-image: linear-gradient(to right, var(--background-hero-gradient), var(--background-hero-gradient)), url("../images/hero-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -495,16 +494,34 @@ body {
   padding-top: 118px;
   padding-bottom: 118px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .hero {
-    max-width: 480px;
-    height: 400px;
+    background-image: linear-gradient(to right, var(--background-hero-gradient), var(--background-hero-gradient)), url("../images/mobile-hero-bck.jpg");
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-resolution: 2dppx) {
   .hero {
-    max-width: 768px;
-    height: 400px;
+    background-image: linear-gradient(to right, var(--background-hero-gradient), var(--background-hero-gradient)), url("../images/mobile-hero-bck@2x.jpg");
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: linear-gradient(to right, var(--background-hero-gradient), var(--background-hero-gradient)), url("../images/tablet-hero-bck.jpg");
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, var(--background-hero-gradient), var(--background-hero-gradient)), url("../images/tablet-hero-bck@2x.jpg");
+  }
+}
+@media screen and (min-width: 781px) {
+  .hero {
+    background-image: linear-gradient(to right, var(--background-hero-gradient), var(--background-hero-gradient)), url("../images/desktop-hero-bck.jpg");
+  }
+}
+@media screen and (min-width: 781px) and (min-device-pixel-ratio: 2), screen and (min-width: 781px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 781px) and (min-resolution: 192dpi), screen and (min-width: 781px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, var(--background-hero-gradient), var(--background-hero-gradient)), url("../images/desktop-hero-bck@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -762,17 +779,13 @@ body {
 
 .team__photo {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .team__text {
   padding-top: 30px;
-}
-@media screen and (min-width: 480px) {
-  .team__text {
-    padding-left: 122px;
-    padding-right: 122px;
-    padding-bottom: 24px;
-  }
+  padding-bottom: 24px;
 }
 @media screen and (min-width: 768px) {
   .team__text {
@@ -811,11 +824,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 44px;
-}
-@media screen and (min-width: 480px) {
-  .social-media {
-    width: 206px;
-  }
 }
 
 .social-media__item {
@@ -1164,6 +1172,13 @@ body {
   margin-right: -8px;
   margin-top: -15px;
 }
+@media screen and (min-width: 768px) {
+  .products-list {
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+  }
+}
 @media screen and (min-width: 1200px) {
   .products-list {
     justify-content: center;
@@ -1244,13 +1259,13 @@ body {
 
 .product-cards__thumb {
   position: relative;
-  max-width: 370px;
-  min-height: 294px;
   overflow: hidden;
 }
 
 .product-cards__img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .product-cards__overlay {

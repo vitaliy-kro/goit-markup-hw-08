@@ -36,12 +36,14 @@
 }
 .product-cards__thumb {
   position: relative;
-  max-width: 370px;
-  min-height: 294px;
+  // max-width: 370px;
+  // min-height: 294px;
   overflow: hidden;
 }
 .product-cards__img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .product-cards__overlay {
   position: absolute;

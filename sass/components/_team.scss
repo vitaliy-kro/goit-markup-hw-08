@@ -47,15 +47,12 @@
 
 .team__photo {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .team__text {
   padding-top: 30px;
-
-  @media screen and (min-width: 480px) {
-    padding-left: 122px;
-    padding-right: 122px;
-    padding-bottom: 24px;
-  }
+  padding-bottom: 24px;
   @media screen and (min-width: 768px) {
     padding-left: 74px;
     padding-right: 74px;
@@ -92,12 +89,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   height: 44px;
-
-  @media screen and (min-width: 480px) {
-    width: 206px;
-  }
 }
 .social-media__item {
   display: flex;

@@ -153,6 +153,7 @@
               <div class="examples__thumb">
                 <img
                   class="examples__photo"
+                  srcset="./images/img1@2x.jpg 2x"
                   width="370"
                   src="./images/img1.jpg"
                   alt="работа за компьютером и планшетом"
@@ -164,6 +165,7 @@
               <div class="examples__thumb">
                 <img
                   class="examples__photo"
+                  srcset="./images/img2@2x.jpg 2x"
                   width="370"
                   src="./images/img2.jpg"
                   alt="работа за ноутбуком и смартфоном"
@@ -175,6 +177,7 @@
               <div class="examples__thumb">
                 <img
                   class="examples__photo"
+                  srcset="./images/img3@2x.jpg 2x"
                   width="370"
                   src="./images/img3.jpg"
                   alt="работа за планшетом на фоне компьютера"
@@ -191,12 +194,22 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item team__item--first">
-              <img
-                class="team__photo"
-                width="270"
-                src="./images/img_team1.jpg"
-                alt="мужчина в очках с бородой который улыбается"
-              />
+              <picture>
+                <source
+                  srcset="./images/pc-team1.jpg 1x, ./images/pc-team1@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/tablet-team1-photo.jpg 1x, ./images/tablet-team1-photo@2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <img
+                  class="team__photo"
+                  srcset="./images/mobile-team1-photo.jpg 1x, ./images/mobile-team1-photo@2x.jpg 2x"
+                  src="./images/mobile-team1-photo.jpg"
+                  alt="мужчина в очках с бородой который улыбается"
+                />
+              </picture>
               <div class="team__text">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p lang="en" class="team__position">Product Designer</p>
@@ -231,12 +244,23 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__photo"
-                width="270"
-                src="./images/img_team2.jpg"
-                alt="женщина в очках со светлыми волосами улыбается"
-              />
+              <picture>
+                <source
+                  srcset="./images/pc-team2.jpg 1x, ./images/pc-team2@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/tablet-team2-photo.jpg 1x, ./images/tablet-team2-photo@2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+
+                <img
+                  class="team__photo"
+                  srcset="./images/mobile-team2-photo.jpg 1x, ./images/mobile-team2-photo@2x.jpg 2x"
+                  src="./images/mobile-team2-photo.jpg"
+                  alt="женщина в очках со светлыми волосами улыбается"
+                />
+              </picture>
               <div class="team__text">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p lang="en" class="team__position">Frontend Developer</p>
@@ -271,12 +295,23 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__photo"
-                width="270"
-                src="./images/img_team3.jpg"
-                alt="мужчина с щетиной улыбается "
-              />
+              <picture>
+                <source
+                  srcset="./images/pc-team3.jpg 1x, ./images/pc-team3@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/tablet-team3-photo.jpg 1x, ./images/tablet-team3-photo@2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <img
+                  class="team__photo"
+                  srcset="./images/mobile-team3-photo.jpg 1x, ./images/mobile-team3-photo@2x.jpg 2x"
+                  src="./images/mobile-team3-photo.jpg"
+                  alt="мужчина с щетиной улыбается "
+                />
+              </picture>
+
               <div class="team__text">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p lang="en" class="team__position">Marketing</p>
@@ -311,12 +346,22 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__photo"
-                width="270"
-                src="./images/img_team4.jpg"
-                alt="мужчина в очках с бородой смотрит уверенно в камеру"
-              />
+              <picture>
+                <source
+                  srcset="./images/pc-team4.jpg 1x, ./images/pc-team4@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/tablet-team4-photo.jpg 1x, ./images/tablet-team4-photo@2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <img
+                  class="team__photo"
+                  srcset="./images/mobile-team4-photo.jpg 1x, ./images/mobile-team4-photo@2x.jpg 2x"
+                  src="./images/mobile-team4-photo.jpg"
+                  alt="мужчина в очках с бородой смотрит уверенно в камеру"
+                />
+              </picture>
               <div class="team__text">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p lang="en" class="team__position">UI Designer</p>
