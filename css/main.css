@@ -453,11 +453,12 @@ body {
 
 .page-header__item:not(:last-child)::after {
   content: "";
+  display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
-  width: 0;
+  width: 1px;
   height: 22px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: rgba(33, 33, 33, 0.2);
 }
 
 .social-media-link {
