@@ -10,6 +10,9 @@
   clip-path: inset(50%);
   margin: -1px;
 }
+.no-scroll {
+  overflow: hidden;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
