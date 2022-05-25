@@ -156,13 +156,13 @@ body {
   text-decoration: none;
   color: var(--accent-color);
 }
-.page-header__menu.flex-transform .logo {
-  display: none;
-}
 @media screen and (max-width: 767.98px) {
   .logo {
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+  .page-header__menu.flex-transform .logo {
+    display: none;
   }
 }
 @media screen and (min-width: 768px) {
