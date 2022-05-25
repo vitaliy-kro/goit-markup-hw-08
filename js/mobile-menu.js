@@ -2,8 +2,8 @@
   const menuBtnRef = document.querySelector('[data-menu-button]');
   const mobileMenuRef = document.querySelector('[data-menu]');
   const bodyRef = document.querySelector('body');
-  const headLogRef = document.querySelector('[visibility]');
-  const headMenuRef = document.querySelector('[button-position]');
+  const headLogRef = document.querySelector('[data-visibility]');
+  const headMenuRef = document.querySelector('[data-button-position]');
 
   menuBtnRef.addEventListener('click', () => {
     const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
