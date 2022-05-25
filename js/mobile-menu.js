@@ -2,7 +2,6 @@
   const menuBtnRef = document.querySelector('[data-menu-button]');
   const mobileMenuRef = document.querySelector('[data-menu]');
   const bodyRef = document.querySelector('body');
-  const headLogRef = document.querySelector('[data-visibility]');
   const headMenuRef = document.querySelector('[data-button-position]');
 
   menuBtnRef.addEventListener('click', () => {
@@ -13,7 +12,6 @@
 
     mobileMenuRef.classList.toggle('is-open');
     bodyRef.classList.toggle('no-scroll');
-    headLogRef.classList.toggle('visually-hidden');
     headMenuRef.classList.toggle('flex-transform');
   });
 })();

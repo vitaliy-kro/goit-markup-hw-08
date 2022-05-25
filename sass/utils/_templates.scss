@@ -10,8 +10,12 @@
   clip-path: inset(50%);
   margin: -1px;
 }
-@media screen and (max-with: 767.98px) {
-  .no-scroll {
+.no-scroll {
+  @media screen and (max-width: 767.98px) {
+    overflow: hidden;
+  }
+
+  &-modal {
     overflow: hidden;
   }
 }
