@@ -41,6 +41,7 @@
 }
 .menu-button__icon-cross {
   display: none;
+  transition: fill 250ms var(--main-animation);
   .menu-button.is-open & {
     display: block;
   }
@@ -51,6 +52,7 @@
   }
 }
 .menu-button__icon-menu {
+  transition: fill 250ms var(--main-animation);
   fill: currentColor;
   .menu-button:hover &,
   .menu-button:focus & {
@@ -70,10 +72,13 @@
   width: 100vw;
   height: 100vh;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   padding-left: 40px;
   padding-right: 40px;
-  padding-bottom: 48px;
+  padding-bottom: 60px;
 
   background-color: var(--main-background-color);
 
@@ -85,6 +90,7 @@
 
   @media screen and (min-width: 768px) {
     z-index: 0;
+    flex-direction: row;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,8 +110,6 @@
   }
 }
 .page-header__navigation {
-  margin-bottom: 302px;
-
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
@@ -184,7 +188,6 @@
 }
 
 .auth-list {
-  margin-bottom: 64px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column-reverse;
@@ -240,7 +243,12 @@
     display: flex;
     font-size: 12px;
     line-height: 1.16;
-
+    &--middle-tel {
+      padding-bottom: 20px;
+    }
+    &--big-email {
+      padding-top: 20px;
+    }
     color: var(--primary-text-color);
   }
 

@@ -17,7 +17,8 @@
     @include item(null, null, 30px, 30px, null, 2, 30px);
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 3 - 30px);
+    min-width: 370px;
+    @include item(null, null, 30px, 30px, null, 3, 30px);
   }
 }
 .card-link {
