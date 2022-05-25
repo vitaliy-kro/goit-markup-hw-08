@@ -158,6 +158,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 0;
 
   font-size: 12px;
   line-height: 1.16;
@@ -190,6 +191,10 @@
     box-shadow: none;
   }
 }
+.agreement-label__text {
+  text-align: initial;
+}
+
 .agreement-conditions {
   color: var(--title-text-color);
   transition: color 250ms var(--main-animation);
