@@ -13,7 +13,15 @@
     background-color: $hoverBckg;
   }
 }
-
+@mixin font($fz, $ff, $fw, $lh, $ls, $c, $ti: left) {
+  font-size: $fz;
+  font-family: $ff;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $c;
+  text-align: $ti;
+}
 @mixin item($mr, $mb, $ml, $mt, $m, $q, $gap) {
   margin-right: $mr;
   margin-bottom: $mb;

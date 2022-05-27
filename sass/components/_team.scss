@@ -1,7 +1,7 @@
 .team {
   background-color: var(--product-button-color);
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -11,7 +11,7 @@
   }
 }
 .team__list {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
@@ -26,13 +26,13 @@
   background-color: var(--white-title-color);
   box-shadow: var(--workers-card-shadow);
   border-radius: 0px 0px 4px 4px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     margin-top: 30px;
     &-first {
       margin-top: 0;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     width: 354px;
     @include item(null, null, 30px, 30px, null, 2, 30px);
   }

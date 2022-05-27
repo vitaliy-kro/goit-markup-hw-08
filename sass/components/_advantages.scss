@@ -27,7 +27,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     width: 354px;
     @include item(null, null, 30px, 30px, null, 2, 30px);
   }
@@ -70,7 +70,7 @@
   line-height: 1.14;
   text-transform: uppercase;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     text-align: center;
   }
 }
